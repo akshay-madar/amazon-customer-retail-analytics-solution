@@ -1,6 +1,11 @@
 
+## Business Use Case:
+- Scraped key data metrics of 700+ products on Amazon to identify drivers affecting the Top-100 Trending ranking
+- Identified high value customers to enhance promotional outreach by using RFM analysis and predicting churn with ~93% accuracy
+
+
 									Amazon Hot New Releases 
-ReadMe File
+
 
 Detailed overview of all the steps to follow:
 
