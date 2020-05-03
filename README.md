@@ -24,6 +24,10 @@ To examine the impact of various variables on rank of sellers, Amazon is leverag
   <img width="800" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_collection.PNG">
 </p>
 
+<p align="center">
+  <img width="800" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/new_releases.PNG">
+</p>
+
 This is followed by necessary data preparation to account for skewness, and a check on correlation amongst variables.
 
 <p align="center">
