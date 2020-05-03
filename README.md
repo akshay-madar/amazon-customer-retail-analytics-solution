@@ -14,20 +14,20 @@ Because it is the world's largest online marketplace, with more than 310 active 
 The objective is to build statistical model on publicly available data from Amazon so that sellers and ultimately Amazon can leverage our insights to push their products up the trending ladder.
 
 <p align="center">
-  <img width="760" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_problem.PNG">
+  <img width="800" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_problem.PNG">
 </p>
 
 ## 2. Computational Steps:
 To examine the impact of various variables on rank of sellers, Amazon is leveraged as the platform to obtain data points for few vital attributes in our solution – rank, prime delivery status, discount offered status, price, top 10 customer reviews, average rating, rating count, number of answered questions, and number of product images. Data is scraped rigourously from Amazon using BeautifulSoup, for seven different categories – **Electronics, Computers and Accessories, Clothing, Pet Supplies, Tools and Home Improvement, Toys and Games, and Grocery** – that catalyze most of the sales for Amazon. 
 
 <p align="center">
-  <img width="760" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_collection.PNG">
+  <img width="800" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_collection.PNG">
 </p>
 
 This is followed by necessary data preparation to account for skewness, and a check on correlation amongst variables.
 
 <p align="center">
-  <img width="760" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_preparation.PNG">
+  <img width="800" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_preparation.PNG">
 </p>
 
 <p align="center">
@@ -37,11 +37,11 @@ This is followed by necessary data preparation to account for skewness, and a ch
 To ensure a comprehensive analysis, top 10 customer reviews are collected which captured the overall product sentiment adequately. Thereafter, **Microsoft Azure Text Analytics API** is used to generate averaged sentiment scores for each product.
 
 <p align="center">
-  <img width="760" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/sentiment.PNG">
+  <img width="800" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/sentiment.PNG">
 </p>
 
 
-After requisite data preparation to account for skewness in certain variables, we deployed a log-log regression model using Jupyter Notebook to measure elasticity of rank with respect to given variables. We also accounted for synergy effect between variables and included interaction terms. The full model encompassing all product categories was run to give significant variables that affected ranking of products. For a deeper analysis into how different product categories behaved, a subsampled regression analysis for each category was also performed to see how significant the variables were for these categories.
+After requisite data preparation to account for skewness in certain variables, log-log regression model was deployed to measure elasticity of rank with respect to given variables. We also accounted for synergy effect between variables and included interaction terms. The full model encompassing all product categories was run to give significant variables that affected ranking of products. For a deeper analysis into how different product categories behaved, a subsampled regression analysis for each category was also performed to see how significant the variables were for these categories.
 
 ## Insigths and Value Proposition:
 There are multiple parameters which have considerable effect on the ranks of new releases. Also, the extent of impact of different parameters is different across the categories. Amazon and its sellers can benefit from the model by identifying which areas help in increasing the rank of their newly released products. The probability of higher sales increases massively due to higher visibility, if the rank increases. Also, while it is essential that sellers manage to enter this trending list of new releases, they would be able to reap maximum benefit if they move from the rank bucket of 51-100 on second page to the first page of top 50 product releases. We believe our analysis and accompanying insights would help them achieve this critical objective to stay on the trending list for longer, which would result in improved sales for their products, and edge out competing brands
