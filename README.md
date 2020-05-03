@@ -14,30 +14,30 @@ Because it is the world's largest online marketplace, with more than 310 active 
 The objective is to build statistical model on publicly available data from Amazon so that sellers and ultimately Amazon can leverage our insights to push their products up the trending ladder.
 
 <p align="center">
-  <img width="660" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_problem.PNG">
+  <img width="760" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_problem.PNG">
 </p>
 
 ## 2. Computational Steps:
 To examine the impact of various variables on rank of sellers, Amazon is leveraged as the platform to obtain data points for few vital attributes in our solution – rank, prime delivery status, discount offered status, price, top 10 customer reviews, average rating, rating count, number of answered questions, and number of product images. Data is scraped rigourously from Amazon using BeautifulSoup, for seven different categories – **Electronics, Computers and Accessories, Clothing, Pet Supplies, Tools and Home Improvement, Toys and Games, and Grocery** – that catalyze most of the sales for Amazon. 
 
 <p align="center">
-  <img width="660" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_collection.PNG">
+  <img width="760" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_collection.PNG">
 </p>
 
 This is followed by necessary data preparation to account for skewness, and a check on correlation amongst variables.
 
 <p align="center">
-  <img width="660" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_preparation.PNG">
+  <img width="760" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_preparation.PNG">
 </p>
 
 <p align="center">
-  <img width="660" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/correlation.PNG">
+  <img width="760" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/correlation.png">
 </p>
 
 To ensure a comprehensive analysis, top 10 customer reviews are collected which captured the overall product sentiment adequately. Thereafter, **Microsoft Azure Text Analytics API** is used to generate averaged sentiment scores for each product.
 
 <p align="center">
-  <img width="660" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/sentiment.PNG">
+  <img width="760" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/sentiment.PNG">
 </p>
 
 
