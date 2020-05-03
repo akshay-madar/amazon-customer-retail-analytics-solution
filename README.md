@@ -1,7 +1,7 @@
 # Amazon - Customer and Retail Analytics Solution for ECommerce
 
 ## Motivation:
-Amazon sells millions of products through thousands of sellers on its platforms. This portfolio of product varies widely across different product categories and even different times of the year. To boost visibility and popularity of products, Amazon hosts a New Releases ranking of top 100 products of all categories, a list which is updated hourly. To enable sellers insert their products into this list and move them further up the order, it is crucial to gain an understanding of which factors influence their ranks and how. Our objective is to build statistical model on publicly available data from Amazon so that sellers and ultimately Amazon can leverage our insights to push their products up the trending ladder.
+Amazon sells millions of products through thousands of sellers on its platforms. This portfolio of product varies widely across different product categories and even different times of the year. To boost visibility and popularity of products, Amazon hosts a New Releases ranking of top 100 products of all categories, a list which is updated hourly. To enable sellers insert their products into this list and move them further up the order, it is crucial to gain an understanding of which factors influence their ranks and how. 
 
 ### But why Amazon?
 Because it is the world's largest online marketplace, with more than 310 active user base, and sells more than 12 millions products across different categories.
@@ -11,20 +11,19 @@ Because it is the world's largest online marketplace, with more than 310 active 
 </p>
 
 ## 1. Objective:
+The objective is to build statistical model on publicly available data from Amazon so that sellers and ultimately Amazon can leverage our insights to push their products up the trending ladder.
 
+## 2. Computational Steps:
+To examine the impact of various variables on rank of sellers, we leveraged Amazon as the platform to obtain data points for few vital attributes in our solution – rank, prime delivery status, discount offered status, price, top 10 customer reviews, average rating, rating count, number of answered questions, and number of product images. We rigorously scraped data from Amazon using BeautifulSoup, for seven different categories – Electronics, Computers and Accessories, Clothing, Pet Supplies, Tools and Home Improvement, Toys and Games, and Grocery – that catalyze most of the sales for Amazon. To ensure a comprehensive analysis, we looked at top 10 customer reviews which captured the overall product sentiment adequately. We used Microsoft Azure Text Analytics API to generate averaged sentiment scores for each product.
+After requisite data preparation to account for skewness in certain variables, we deployed a log-log regression model using Jupyter Notebook to measure elasticity of rank with respect to given variables. We also accounted for synergy effect between variables and included interaction terms. The full model encompassing all product categories was run to give significant variables that affected ranking of products. For a deeper analysis into how different product categories behaved, a subsampled regression analysis for each category was also performed to see how significant the variables were for these categories.
 
+## Insigths and Value Proposition:
+There are multiple parameters which have considerable effect on the ranks of new releases. Also, the extent of impact of different parameters is different across the categories. Amazon and its sellers can benefit from the model by identifying which areas help in increasing the rank of their newly released products. The probability of higher sales increases massively due to higher visibility, if the rank increases. Also, while it is essential that sellers manage to enter this trending list of new releases, they would be able to reap maximum benefit if they move from the rank bucket of 51-100 on second page to the first page of top 50 product releases. We believe our analysis and accompanying insights would help them achieve this critical objective to stay on the trending list for longer, which would result in improved sales for their products, and edge out competing brands
 
+## Detailed overview of steps to follow:
 
+							Amazon Hot New Releases   
 
-## Business Use Case:
-- Scraped key data metrics of 700+ products on Amazon to identify drivers affecting the Top-100 Trending ranking
-- Identified high value customers to enhance promotional outreach by using RFM analysis and predicting churn with ~93% accuracy
-
-
-									Amazon Hot New Releases 
-
-
-Detailed overview of all the steps to follow:
 
 	1.) Run the “product and review links.ipynb” file to get the links of individual categories. Make sure to change the link for each category. The category links will be dynamic and updates 
     	    every hour. After exporting the results to CSV file, the product links in the csv file have to be considered only till "ProducID". This needs to be done because, the link gets changed 
