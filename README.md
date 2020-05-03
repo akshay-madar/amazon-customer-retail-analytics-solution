@@ -3,12 +3,16 @@
 ## Motivation:
 Amazon sells millions of products through thousands of sellers on its platforms. This portfolio of product varies widely across different product categories and even different times of the year. To boost visibility and popularity of products, Amazon hosts a New Releases ranking of top 100 products of all categories, a list which is updated hourly. To enable sellers insert their products into this list and move them further up the order, it is crucial to gain an understanding of which factors influence their ranks and how. Our objective is to build statistical model on publicly available data from Amazon so that sellers and ultimately Amazon can leverage our insights to push their products up the trending ladder.
 
+### But why Amazon?
+Because it is the world's largest online marketplace, with more than 310 active user base, and sells more than 12 millions products across different categories.
+
 <p align="center">
   <img width="560" height="400" src="https://media.giphy.com/media/3JVHCwSgWWDUVMiTQs/giphy.gif">
 </p>
 
+## 1. Objective:
 
-##
+
 
 
 
