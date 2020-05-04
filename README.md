@@ -10,6 +10,12 @@ Because it is the world's largest online marketplace, with more than 310 active 
   <img width="560" height="400" src="https://media.giphy.com/media/3JVHCwSgWWDUVMiTQs/giphy.gif">
 </p>
 
+## Project Flow:
+1. [**Objective**](#1-objective)
+2. [**Computational Steps**](#2-computational-steps): data collection | data preparation | sentiment of reviews | modeling
+3. [**Insights and Value Proposition**](#3-insights-and-value-proposition)
+4. [**Detailed overview of steps to follow**](#4-detailed-overview-of-steps-to-follow)
+
 ## 1. Objective:
 The objective is to build statistical model on publicly available data from Amazon so that sellers and ultimately Amazon can leverage our insights to push their products up the trending ladder.
 
@@ -47,10 +53,10 @@ To ensure a comprehensive analysis, top 10 customer reviews are collected which 
 
 After requisite data preparation to account for skewness in certain variables, log-log regression model was deployed to measure elasticity of rank with respect to given variables. We also accounted for synergy effect between variables and included interaction terms. The full model encompassing all product categories was run to give significant variables that affected ranking of products. For a deeper analysis into how different product categories behaved, a subsampled regression analysis for each category was also performed to see how significant the variables were for these categories.
 
-## Insigths and Value Proposition:
+## 3. Insigths and Value Proposition:
 There are multiple parameters which have considerable effect on the ranks of new releases. Also, the extent of impact of different parameters is different across the categories. Amazon and its sellers can benefit from the model by identifying which areas help in increasing the rank of their newly released products. The probability of higher sales increases massively due to higher visibility, if the rank increases. Also, while it is essential that sellers manage to enter this trending list of new releases, they would be able to reap maximum benefit if they move from the rank bucket of 51-100 on second page to the first page of top 50 product releases. We believe our analysis and accompanying insights would help them achieve this critical objective to stay on the trending list for longer, which would result in improved sales for their products, and edge out competing brands
 
-## Detailed overview of steps to follow:
+## 4. Detailed overview of steps to follow:
 
 							Amazon Hot New Releases   
 
