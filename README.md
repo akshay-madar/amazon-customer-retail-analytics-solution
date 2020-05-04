@@ -18,7 +18,7 @@ The objective is to build statistical model on publicly available data from Amaz
 </p>
 
 ## 2. Computational Steps:
-To examine the impact of various variables on rank of sellers, Amazon is leveraged as the platform to obtain data points for few vital attributes in our solution – rank, prime delivery status, discount offered status, price, top 10 customer reviews, average rating, rating count, number of answered questions, and number of product images. Data is scraped rigourously from Amazon using BeautifulSoup, for seven different categories – **Electronics, Computers and Accessories, Clothing, Pet Supplies, Tools and Home Improvement, Toys and Games, and Grocery** – that catalyze most of the sales for Amazon. 
+To examine the impact of various variables on rank of sellers, **Amazon - ["Hot New Releases"](https://www.amazon.com/gp/new-releases/?ref_=nav_cs_newreleases)** is leveraged as the platform to obtain data points for few vital attributes in our solution – rank, prime delivery status, discount offered status, price, top 10 customer reviews, average rating, rating count, number of answered questions, and number of product images. Data is scraped rigourously from Amazon using BeautifulSoup, for seven different categories – **Electronics, Computers and Accessories, Clothing, Pet Supplies, Tools and Home Improvement, Toys and Games, and Grocery** – that catalyze most of the sales for Amazon. 
 
 <p align="center">
   <img width="800" height="500" src="https://github.com/akshay-madar/amazon-customer-retail-analytics-solution/blob/master/amazon/data_collection.PNG">
